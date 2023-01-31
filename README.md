@@ -9,4 +9,6 @@ Un client HTTP simple pour découvrir.
 Des clients utilisant des protocoles plus complexes.
 A mettre en lien avec les RFC des protocoles correspondants
 
-#
+# clientSimple.py et serveurSimple.py
+
+Un exemple basique de programmation client / serveur

@@ -12,7 +12,7 @@ import socket, sys
 # A ADAPTER A VOTRE MACHINE, vous pouvez mettre 0.0.0.0 pour écouter sur toutes les adresses IP du serveur
 # Quelle est la conséquence d'écouter sur 127.0.0.1 ?
 HOST = '127.0.0.1'
-PORT = 2003
+PORT = 63000
 
 
 
@@ -87,7 +87,7 @@ while 1:
         # le serveur affiche sur sa console
         print("Reçu du client >"+msgClient+"<")
         # et envoi un echo au client
-        connexion.send(("ECHO : "+msgClient).encode('UTF-8'))
+        connexion.send(("ECHO : "+msgClient+"\n").encode('UTF-8'))
 
 
     #############################

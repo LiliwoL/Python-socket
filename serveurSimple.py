@@ -85,7 +85,7 @@ while 1:
 
         # Traitement de la réponse
         # le serveur affiche sur sa console
-        print("Reçu du client >"+msgClient+"<")
+        print("     Reçu du client >"+msgClient+"<")
         # et envoi un echo au client
         connexion.send(("ECHO : "+msgClient+"\n").encode('UTF-8'))
 

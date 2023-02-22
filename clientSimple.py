@@ -39,6 +39,7 @@ except socket.error:
     # Arrêt du programme
     sys.exit()
 
+print("\n<FIN> pour terminer la connexion\n\n")
 
 #############################
 # 4. Lecture du message de confirmation de connexion envoyé par le serveur
@@ -54,7 +55,6 @@ data = s.recv(150)
 # et l'afficher.
 print("> " + data.decode('utf-8'))
 
-print("\n<FIN> pour terminer la connexion\n\n")
 
 
 #############################

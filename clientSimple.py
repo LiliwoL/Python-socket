@@ -1,6 +1,6 @@
 # Un client à utiliser avec le serveurSimple.py
 
-import socket
+import socket, sys
 
 
 #############################

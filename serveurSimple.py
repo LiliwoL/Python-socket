@@ -11,7 +11,7 @@ import socket, sys
 # Adresse ip et port de la socket sur laquelle va ecouter le serveur
 # A ADAPTER A VOTRE MACHINE, vous pouvez mettre 0.0.0.0 pour écouter sur toutes les adresses IP du serveur
 # Quelle est la conséquence d'écouter sur 127.0.0.1 ?
-HOST = '127.0.0.1'
+HOST = '0.0.0.0'
 PORT = 63000
 
 

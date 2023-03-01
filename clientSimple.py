@@ -13,7 +13,7 @@ import socket, sys
 HOST = '127.0.0.1'
 
 # Saisir ici l'adresse IP de la machine windows de l'élève (pas celle de sa WSL)
-HOST_ELEVE = '172.24.136.234'
+HOST = '172.16.133.1'
 # Port TCP sur lequel on va se connecter
 PORT = 63000
 

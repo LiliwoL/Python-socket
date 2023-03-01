@@ -10,10 +10,18 @@ import socket, sys
 # Adresse ip et port de la socket sur laquelle va ecouter le serveur
 # A ADAPTER A VOTRE MACHINE, vous pouvez mettre 0.0.0.0 pour écouter sur toutes les adresses IP du serveur
 # Quelle est la conséquence d'écouter sur 127.0.0.1 ?
-HOST = '127.0.0.1'
+# HOST = '127.0.0.1'
 
 # Saisir ici l'adresse IP de la machine windows de l'élève (pas celle de sa WSL)
-HOST = '172.16.133.1'
+HOST = {
+        "local": "127.0.0.1",
+        "Marius": "172.16.140.5",
+        "Noé": "172.16.134.19",
+        "Maxime": "172.16.133.1",
+        "Eva": "172.16.137.1",
+        "Camille": "172.16.136.1",
+        "NC": "172.16.3.2",
+    }
 # Port TCP sur lequel on va se connecter
 PORT = 63000
 
@@ -30,7 +38,16 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 3. Connexion du socket vers une paire hôte de destination, port
 #############################
 try:
-    s.connect((HOST, PORT))
+    print ("Sur quel serveur voulez vous vous connecter?")
+    for h in HOST:
+        print (h)
+
+    host_choosed = input()
+    RHOST = HOST[host_choosed]
+
+    print ("Connexion à " + RHOST)
+
+    s.connect((RHOST, PORT))
 except socket.error:
      # En cas d'échec de la liaison
     # La plupart du temps car la connexion est refusée
